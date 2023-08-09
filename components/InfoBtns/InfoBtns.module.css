@@ -1,0 +1,29 @@
+.infoBtns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 350px;
+  height: 48px;
+
+  font-family: var(--font-family-2);
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 2.57px;
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+  border: 2px solid;
+
+  border-color: var(--light-grey);
+  background-color: transparent;
+}
+
+.infoBtns:hover {
+  background-color: var(--dark-grey);
+}
+
+.infoBtns:active {
+  background-color: var(--green);
+  border-color: var(--green);
+}

@@ -1,0 +1,34 @@
+.tabUnit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.tabUnitTitle {
+  font-family: var(--font-family-1);
+  font-size: 28px;
+  font-style: medium;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 22px 594px 0 32px;
+}
+
+.tabUnitTabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: space-evenly;
+}
+
+.planetTabs {
+  font-family: var(--font-family-2);
+  font-size: 11px;
+  font-style: bold;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 22px 33px 0 0;
+}

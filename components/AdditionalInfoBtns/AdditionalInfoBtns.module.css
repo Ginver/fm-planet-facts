@@ -1,0 +1,14 @@
+.additionalInfoBtns {
+  display: flex;
+  flex-direction: column;
+  padding-top: 39px;
+}
+
+.infoBtnsNr {
+  color: var(--light-grey);
+  padding: 0 25px 0 28px;
+}
+
+.infoBtnsTitle {
+  color: var(--white);
+}

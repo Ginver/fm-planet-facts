@@ -1,0 +1,7 @@
+.namePlanet {
+     font-family: var(--font-family-1);
+     font-size: 80px;
+     font-weight: medium;
+     text-transform: uppercase;
+     color: var(--white);
+}

@@ -1,0 +1,12 @@
+.sourceLink {
+  font-family: var(--font-family-2);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  color: var(--light-grey);
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+}

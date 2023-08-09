@@ -1,0 +1,14 @@
+.planetCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 212px;
+}
+
+.planetCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 350px;
+}

@@ -1,0 +1,8 @@
+.descriptionPlanet {
+  font-family: var(--font-family-2);
+  font-size: 14px;
+  font-weight: regular;
+  line-height: 25px;
+  color: var(--white);
+  padding: 24px 0 23px 0;
+}

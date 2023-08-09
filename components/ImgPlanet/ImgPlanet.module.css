@@ -1,0 +1,10 @@
+.image {
+  display: flex;
+  justify-content: center;
+  padding-right: 300px;
+}
+
+.imgPlanet {
+  width: 290px;
+  height: 290px;
+}
