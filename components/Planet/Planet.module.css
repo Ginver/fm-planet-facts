@@ -1,14 +1,40 @@
-.planetCard {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  padding-top: 212px;
+@media only screen and (min-width: 375px) {
+  .planetCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 98px;
+  }
+
+  .planetCardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.planetCardContent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 350px;
+@media only screen and (min-width: 768px) {
+  .planetCard {
+    padding: 95px 40px 32px 40px;
+  }
+
+  .planetCardContent {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .planetCard {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 95px 0 0 0;
+  }
+
+  .planetCardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 0 165px 0 165px; */
+  }
 }

@@ -14,28 +14,23 @@ const Planet = () => {
         <ImgPlanet image="/assets/planet-mercury.svg"></ImgPlanet>
 
         <div className={styles.planetCardContent}>
-          <NamePlanet>Mercury</NamePlanet>
-          <DescriptionPlanet
-          // style={{ color: "pink" }}
-          // onClick={function () {
-          //   window.alert("hallo");
-          // }}
-          >
-            blablablablablabla blablablablablabla blablablablablablabla
-            blablablablablabla blablablablablabla blablablablablablabla
-            blablablablablabla blablablablablabla blablablablablablabla
-          </DescriptionPlanet>
-          <SourceLink
-            href="https://en.wikipedia.org/wiki/Mercury"
-            icon="./assets/icon-source.svg"
-          ></SourceLink>
-
-          <div>
+          <div className={styles.planetCC1}>
+            <NamePlanet>Mercury</NamePlanet>
+            <DescriptionPlanet>
+              blablablablablabla blablablablablabla blablablablablablabla
+              blablablablablabla blablablablablabla blablablablablablabla
+              blablablablablabla blablablablablabla blablablablablablabla
+            </DescriptionPlanet>
+            <SourceLink
+              href="https://en.wikipedia.org/wiki/Mercury"
+              icon="./assets/icon-source.svg"
+            ></SourceLink>
+          </div>
+          <div className={styles.planetCC2}>
             <AdditionalInfoBtns></AdditionalInfoBtns>
           </div>
         </div>
       </div>
-
       <div>
         <PropertyInfoSection></PropertyInfoSection>
       </div>
