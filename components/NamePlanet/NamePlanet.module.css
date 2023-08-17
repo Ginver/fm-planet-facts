@@ -1,7 +1,21 @@
-.namePlanet {
-     font-family: var(--font-family-1);
-     font-size: 80px;
-     font-weight: medium;
-     text-transform: uppercase;
-     color: var(--white);
+@media only screen and (min-width: 375px) {
+  .namePlanet {
+    font-family: var(--font-family-1);
+    font-size: 40px;
+    font-weight: medium;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .namePlanet {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .namePlanet {
+    font-size: 80px;
+  }
 }

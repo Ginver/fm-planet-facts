@@ -1,4 +1,20 @@
-.container {
-  max-width: 1440px;
-  padding: 0 165px 0 165px;
+@media only screen and (min-width: 375px) {
+  .container {
+    min-width: 375px;
+    /* padding: 0 165px 0 165px; */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    /* padding: 0 165px 0 165px; */
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    min-width: 1440px;
+    padding: 0 165px 0 165px;
+  }
 }
