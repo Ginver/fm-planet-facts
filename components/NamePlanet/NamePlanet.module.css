@@ -1,5 +1,7 @@
 @media only screen and (min-width: 375px) {
   .namePlanet {
+    display: flex;
+    justify-content: center;
     font-family: var(--font-family-1);
     font-size: 40px;
     font-weight: medium;
@@ -10,12 +12,14 @@
 
 @media only screen and (min-width: 768px) {
   .namePlanet {
+    justify-content: flex-start;
     font-size: 48px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .namePlanet {
+    justify-content: flex-start;
     font-size: 80px;
   }
 }
