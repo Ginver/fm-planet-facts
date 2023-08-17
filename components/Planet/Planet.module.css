@@ -2,7 +2,6 @@
   .planetCard {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-content: center;
     padding-top: 98px;
   }
@@ -21,6 +20,8 @@
 
   .planetCardContent {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
