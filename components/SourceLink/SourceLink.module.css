@@ -1,12 +1,30 @@
-.sourceLink {
-  font-family: var(--font-family-2);
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 25px;
-  color: var(--light-grey);
+@media only screen and (min-width: 375px) {
+  .sourceLink {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family-2);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25px;
+    color: var(--light-grey);
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+  }
 }
 
-.icon {
-  width: 12px;
-  height: 12px;
+@media only screen and (min-width: 768px) {
+  .sourceLink {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sourceLink {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
