@@ -1,10 +1,35 @@
-.image {
-  display: flex;
-  justify-content: center;
-  padding-right: 300px;
+@media only screen and (min-width: 375px) {
+  .image {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 67px;
+  }
+
+  .imgPlanet {
+    width: 173px;
+    height: 173px;
+  }
 }
 
-.imgPlanet {
-  width: 290px;
-  height: 290px;
+@media only screen and (min-width: 768px) {
+  .image {
+    padding-bottom: 79px;
+  }
+
+  .imgPlanet {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .image {
+    align-items: center;
+    padding-right: 300px;
+  }
+
+  .imgPlanet {
+    width: 290px;
+    height: 290px;
+  }
 }
