@@ -1,40 +1,114 @@
-.propertyInfoSection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 87px;
+@media only screen and (min-width: 375px) {
+  .propertyInfoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .propertyInfoSectionBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 327px;
+    height: 48px;
+    border: 2px solid;
+    padding: 0 23px 0 23px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    color: var(--light-grey);
+  }
+
+  .propertyInfoSectionBlock:hover {
+    border-color: var(--blue);
+  }
+
+  .dataType {
+    font-family: var(--font-family-2);
+    font-size: 8px;
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: 0.73px;
+    color: var(--light-grey);
+    text-transform: uppercase;
+  }
+
+  .data {
+    font-family: var(--font-family-1);
+    font-size: 20px;
+    font-weight: medium;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: var(--white);
+  }
 }
 
-.propertyInfoSectionBlock {
-  border: 2px solid;
-  margin-bottom: 16px;
-  background-color: transparent;
-  color: var(--light-grey);
-  width: 255px;
-  height: 128px;
-  padding-left: 23px;
+@media only screen and (min-width: 768px) {
+  .propertyInfoSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-top: 87px; */
+    margin: 0 40px 0 40px;
+  }
+
+  .propertyInfoSectionBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 164px;
+    height: 88px;
+    padding: 0 17px 0 17px;
+    margin-bottom: 16px;
+  }
+
+  .dataType {
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 0.73px;
+    padding-top: 16px;
+  }
+
+  .data {
+    font-family: var(--font-family-1);
+    font-size: 24px;
+    font-weight: medium;
+    letter-spacing: 0.9px;
+    padding: 6px 0 19px 0;
+  }
 }
 
-.propertyInfoSectionBlock:hover {
-  border-color: var(--blue);
-}
+@media only screen and (min-width: 1440px) {
+  .propertyInfoSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 87px;
+    margin: 0;
+  }
 
-.dataType {
-  font-family: var(--font-family-2);
-  font-size: 11px;
-  font-weight: bold;
-  line-height: 25px;
-  letter-spacing: 1px;
-  color: var(--light-grey);
-  text-transform: uppercase;
-  padding-top: 20px;
-}
+  .propertyInfoSectionBlock {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 128px;
+    padding-left: 23px;
+    margin-bottom: 16px;
+  }
 
-.data {
-  font-family: var(--font-family-1);
-  font-size: 40px;
-  font-weight: medium;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--white);
+  .dataType {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+  }
+
+  .data {
+    font-size: 40px;
+    font-weight: medium;
+    letter-spacing: 1.5px;
+  }
 }
