@@ -15,6 +15,12 @@ const Tabs = () => {
         <h1>The planets</h1>
       </div>
 
+      <div className={styles.tabUnitHburger}>
+        <div className={styles.tabUnitHburgerLns}></div>
+        <div className={styles.tabUnitHburgerLns}></div>
+        <div className={styles.tabUnitHburgerLns}></div>
+      </div>
+
       <div className={styles.tabUnitTabs}>
         <p className={styles.planetTabs}>Mercury</p>
         <p className={styles.planetTabs}>Venus</p>
