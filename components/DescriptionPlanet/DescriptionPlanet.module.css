@@ -1,8 +1,33 @@
-.descriptionPlanet {
-  font-family: var(--font-family-2);
-  font-size: 14px;
-  font-weight: regular;
-  line-height: 25px;
-  color: var(--white);
-  padding: 24px 0 23px 0;
+@media only screen and (min-width: 375px) {
+  .descriptionPlanet {
+    display: flex;
+    justify-content: center;
+    width: 327px;
+    font-family: var(--font-family-2);
+    font-size: 11px;
+    /* font-weight: regular; */
+    line-height: 22px;
+    color: var(--light-grey);
+    padding: 16px 0 32px 0;
+    /* padding: 16px 24px 32px 24px; */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .descriptionPlanet {
+    justify-content: flex-start;
+    width: 339px;
+    padding: 24px 0 32px 0;
+    /* padding: 24px 69px 32px 39px; */
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .descriptionPlanet {
+    justify-content: flex-start;
+    width: 350px;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 24px 0 23px 0;
+  }
 }
