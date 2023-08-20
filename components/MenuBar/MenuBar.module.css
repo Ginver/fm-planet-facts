@@ -1,0 +1,117 @@
+@media only screen and (min-width: 375px) {
+  .menuBarUnit {
+    display: flex;
+    flex-direction: column;
+    margin: 44px 24px 0 24px;
+  }
+
+  @media only screen and (min-width: 375px) {
+    .menuBarTabUnit {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0 20px 0;
+    }
+
+    .planetTabUnit {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .planetTabColorMercury {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-color: var(--white);
+    }
+
+    .planetTabColorVenus {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-color: var(--oker);
+    }
+
+    .planetTabColorEarth {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-color: var(--purple);
+    }
+
+    .planetTabColorMars {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-color: var(--terra);
+    }
+
+    .planetTabColorJupiter {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-color: var(--red);
+    }
+
+    .planetTabColorSaturn {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-color: var(--orange);
+    }
+
+    .planetTabColorSaturne {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-color: var(--orange);
+    }
+
+    .planetTabColorUranus {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-color: var(--green);
+    }
+
+    .planetTabColorNeptune {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 24px;
+      background-color: var(--blue);
+    }
+
+    .planetTabName {
+      font-family: var(--font-family-2);
+      font-size: 15px;
+      font-style: bold;
+      line-height: 25px;
+      letter-spacing: 1.36px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menuBarTabUnit {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .menuBarTabUnit {
+    display: none;
+  }
+}
