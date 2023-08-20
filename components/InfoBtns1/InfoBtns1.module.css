@@ -1,0 +1,37 @@
+@media only screen and (min-width: 375px) {
+  .infoBtns1 {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--light-grey);
+  }
+
+  .infoBtnsTitles {
+    font-family: var(--font-family-2);
+    font-size: 9px;
+    font-weight: bold;
+    line-height: auto;
+    letter-spacing: 1.93px;
+    text-transform: uppercase;
+    padding: 20px 0 17px 0;
+    color: var(--white);
+    background-color: transparent;
+    border: 4px solid transparent;
+    border-bottom-color: var(--light-grey);
+  }
+
+  .infoBtnsTitles:active {
+    border-bottom-color: var(--turcoise);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .infoBtns1 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .infoBtns1 {
+    display: none;
+  }
+}
