@@ -3,17 +3,21 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding-top: 98px;
   }
 
   .planetCardContent {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 28px;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .infoBtns1 {
+    display: none;
+  }
+
   .planetCard {
     padding: 95px 40px 32px 40px;
   }
@@ -22,10 +26,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 0;
   }
 }
 
 @media only screen and (min-width: 1440px) {
+  .infoBtns1 {
+    display: none;
+  }
+
   .planetCard {
     flex-direction: row;
     justify-content: flex-end;
@@ -36,6 +45,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* padding: 0 165px 0 165px; */
+    padding-bottom: 0;
   }
 }
