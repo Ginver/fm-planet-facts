@@ -87,7 +87,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+
+    justify-content: space-between;
     border-bottom: 1px solid var(--light-grey);
     padding-bottom: 27px;
   }
@@ -100,7 +101,6 @@
     font-style: medium;
     text-transform: uppercase;
     color: var(--white);
-    margin: 22px 485px 27px 32px;
   }
 
   .tabUnitHburger {
