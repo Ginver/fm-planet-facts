@@ -29,9 +29,11 @@
 }
 
 body {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsl(240, 67%, 8%);
+  background-image: url("../public/assets/background-stars.svg");
+  cursor: pointer;
 }
