@@ -1,38 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - The planet facts
 
-## Getting Started
+This is a solution to the The planet facts on Frontend Mentor
+https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f
 
-First, run the development server:
+### The challenge
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+In this challenge, I needed to be building out an 8-page fact site for all planets in our solar system. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Screenshot
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![image](https://github.com/Ginver/fm-planet-facts/assets/74971813/aec02484-3583-4104-83f4-7fd51fe62cc2)
+![image](https://github.com/Ginver/fm-planet-facts/assets/74971813/7968d2ff-dfe7-4421-b5eb-e433633d43ee)
+![image](https://github.com/Ginver/fm-planet-facts/assets/74971813/db51bb84-b465-496c-b9b9-8ea93554c99e)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Links
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## My process
 
-## Learn More
+- identifying the elements in every screen size
+- drawing a scetch of the positions of the elements
+- building the components and positioning them
+- started styling with mobile view then -> tablet then -> desktop
 
-To learn more about Next.js, take a look at the following resources:
+### Built with
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Styled Components](https://styled-components.com/) - For styles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### What I learned
 
-## Deploy on Vercel
+- to get my way of mobile-first workflow
+- to have a more in depth understanding and practice of flexbox
+- to create a Next.js project for the first time and build an app in this framework
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Continued development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+My next project will be something similar. I'd like to practice more in this framework and would like to repeat the process a couple of times to get more comfortable with it.
+
+### Useful resources
+
+- [Next.js documentation on how to make pages & routing]([https://www.example.com](https://nextjs.org/learn/basics/navigate-between-pages/pages-in-nextjs)) - This helped me to gain knowledge of the routing and the pages of the app.
+
+## Author
+
+- Frontend Mentor - [@Ginver](https://www.frontendmentor.io/profile/Ginver)
