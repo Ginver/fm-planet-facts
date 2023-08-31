@@ -1,7 +1,11 @@
 @media only screen and (min-width: 375px) {
-  .sourceLink {
+  .sectionSourceLink {
     display: flex;
     justify-content: center;
+  }
+
+  .source,
+  .sourceLink {
     font-family: var(--font-family-2);
     font-size: 12px;
     font-weight: bold;
@@ -16,14 +20,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .sourceLink {
+  .sectionSourceLink {
     display: flex;
     justify-content: flex-start;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .sourceLink {
+  .sectionSourceLink {
     display: flex;
     justify-content: flex-start;
   }

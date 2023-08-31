@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./SourceLink.module.css";
 // import icon from "@/public/assets/icon-source.svg";
 
-const SourceLink = ({ href, icon }) => {
+const SourceLink = ({ href }) => {
   return (
-    <div>
+    <div className={styles.sectionSourceLink}>
+      <p className={styles.source}>Source: </p>
       <a className={styles.sourceLink} href={href} target="_blank">
-        Source: Wikipedia <img className={styles.icon} src={icon} />
+        Wikipedia <img className={styles.icon} src="./assets/icon-source.svg" />
       </a>
     </div>
   );
