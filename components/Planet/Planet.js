@@ -8,28 +8,29 @@ import SourceLink from "@/components/SourceLink/SourceLink";
 import styles from "./Planet.module.css";
 import InfoBtns1 from "../InfoBtns1/InfoBtns1";
 import MenuBar from "../MenuBar/MenuBar";
+import { useState } from "react";
 
-const Planet = () => {
+// const [image, setImage] = useState("");
+
+const Planet = (props) => {
+  console.log(props);
   return (
     <>
       <div className={styles.planetCard}>
         <InfoBtns1></InfoBtns1>
 
-        <ImgPlanet image="/assets/planet-mercury.svg"></ImgPlanet>
+        {/* <ImgPlanet image="/assets/planet-mercury.svg"></ImgPlanet> */}
+        <ImgPlanet image={`https:${props.img}`}></ImgPlanet>
 
         <div className={styles.planetCardContent}>
           <div>
-            <NamePlanet>Mercury</NamePlanet>
-            <DescriptionPlanet>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </DescriptionPlanet>
-            <SourceLink
-              href="https://en.wikipedia.org/wiki/Mercury"
-              icon="./assets/icon-source.svg"
-            ></SourceLink>
+            <NamePlanet name={props.name}></NamePlanet>
+            <DescriptionPlanet
+              overview={props.overview}
+              // structure={props.structure}
+              // geology={props.geology}
+            ></DescriptionPlanet>
+            <SourceLink href={props.sourcelink}></SourceLink>
           </div>
 
           <div>
@@ -38,7 +39,12 @@ const Planet = () => {
         </div>
       </div>
       <div>
-        <PropertyInfoSection></PropertyInfoSection>
+        <PropertyInfoSection
+          rotation={props.rotation}
+          revolution={props.revolution}
+          radius={props.radius}
+          temperature={props.temperature}
+        ></PropertyInfoSection>
       </div>
 
       <MenuBar></MenuBar>
