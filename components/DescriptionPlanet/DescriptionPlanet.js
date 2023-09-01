@@ -1,12 +1,10 @@
 import React from "react";
 import styles from "./DescriptionPlanet.module.css";
 
-const DescriptionPlanet = ({ children, ...props }) => {
+const DescriptionPlanet = (props) => {
   return (
     <>
-      <p {...props} className={styles.descriptionPlanet}>
-        {children}
-      </p>
+      <p className={styles.descriptionPlanet}>{props.overview}</p>
     </>
   );
 };
