@@ -2,12 +2,17 @@ import React from "react";
 import { useState } from "react";
 import styles from "./Tabs.module.css";
 import MenuBar from "../MenuBar/MenuBar";
+import Link from "next/link";
 
-const Tabs = () => {
-  const [planetTabs, setPlanetTabs] = useState(0);
+const Tabs = (props) => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
-  const handleTabClick = (index) => {
-    setPlanetTabs(index);
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
+  const closeMenu = () => {
+    setNavbarOpen(false);
   };
 
   return (
@@ -16,75 +21,80 @@ const Tabs = () => {
         <h1>The planets</h1>
       </div>
 
-      <div className={styles.tabUnitHburger}>
+      <button className={styles.tabUnitHburger} onClick={handleToggle}>
         <div className={styles.tabUnitHburgerLns}></div>
         <div className={styles.tabUnitHburgerLns}></div>
         <div className={styles.tabUnitHburgerLns}></div>
-      </div>
+      </button>
 
-      <div className={styles.tabUnitTabs}>
-        <p className={styles.planetTabs}>Mercury</p>
-        <p className={styles.planetTabs}>Venus</p>
-        <p className={styles.planetTabs}>Earth</p>
-        <p className={styles.planetTabs}>Mars</p>
-        <p className={styles.planetTabs}>Jupiter</p>
-        <p className={styles.planetTabs}>Saturn</p>
-        <p className={styles.planetTabs}>Uranus</p>
-        <p className={styles.planetTabs}>Neptune</p>
-      </div>
+      <MenuBar></MenuBar>
 
-      {/* <div className={styles.tabUnitTabs}>
-        <ul>
-          <li
-            className={planetTabs === 0 ? "active" : ""}
-            onClick={() => handleTabClick(0)}
+      <ul className={styles.tabUnitTabs}>
+        <li>
+          <Link
+            className={styles.planetTabs}
+            href={{ query: { planetName: "mercury" } }}
           >
             Mercury
-          </li>
-          <li
-            className={planetTabs === 1 ? "active" : ""}
-            onClick={() => handleTabClick(1)}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={styles.planetTabs}
+            href={{ query: { planetName: "venus" } }}
           >
             Venus
-          </li>
-          <li
-            className={planetTabs === 2 ? "active" : ""}
-            onClick={() => handleTabClick(2)}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={styles.planetTabs}
+            href={{ query: { planetName: "earth" } }}
           >
             Earth
-          </li>
-          <li
-            className={planetTabs === 2 ? "active" : ""}
-            onClick={() => handleTabClick(2)}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={styles.planetTabs}
+            href={{ query: { planetName: "mars" } }}
           >
             Mars
-          </li>
-          <li
-            className={planetTabs === 2 ? "active" : ""}
-            onClick={() => handleTabClick(2)}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={styles.planetTabs}
+            href={{ query: { planetName: "jupiter" } }}
           >
             Jupiter
-          </li>
-          <li
-            className={planetTabs === 2 ? "active" : ""}
-            onClick={() => handleTabClick(2)}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={styles.planetTabs}
+            href={{ query: { planetName: "saturn" } }}
           >
             Saturn
-          </li>
-          <li
-            className={planetTabs === 2 ? "active" : ""}
-            onClick={() => handleTabClick(2)}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={styles.planetTabs}
+            href={{ query: { planetName: "uranus" } }}
           >
             Uranus
-          </li>
-          <li
-            className={planetTabs === 2 ? "active" : ""}
-            onClick={() => handleTabClick(2)}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={styles.planetTabs}
+            href={{ query: { planetName: "neptune" } }}
           >
             Neptune
-          </li>
-        </ul>
-      </div> */}
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };
