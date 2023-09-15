@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MenuBar.module.css";
-// import MenuBarTab from "../MenuBarTab/MenuBarTab";
+import Link from "next/link";
 
 const MenuBar = () => {
   return (
@@ -10,7 +10,12 @@ const MenuBar = () => {
           <div className={styles.menuBarTabUnit}>
             <div className={styles.planetTabUnit}>
               <div className={styles.planetTabColorMercury}></div>
-              <p className={styles.planetTabName}>Mercury</p>
+              <Link
+                className={styles.planetTabName}
+                href={{ query: { planetName: "mercury" } }}
+              >
+                Mercury
+              </Link>
             </div>
 
             <div>
@@ -30,7 +35,12 @@ const MenuBar = () => {
           <div className={styles.menuBarTabUnit}>
             <div className={styles.planetTabUnit}>
               <div className={styles.planetTabColorVenus}></div>
-              <p className={styles.planetTabName}>Venus</p>
+              <Link
+                className={styles.planetTabName}
+                href={{ query: { planetName: "venus" } }}
+              >
+                Venus
+              </Link>
             </div>
 
             <div>
@@ -49,7 +59,12 @@ const MenuBar = () => {
           <div className={styles.menuBarTabUnit}>
             <div className={styles.planetTabUnit}>
               <div className={styles.planetTabColorEarth}></div>
-              <p className={styles.planetTabName}>Mars</p>
+              <Link
+                className={styles.planetTabName}
+                href={{ query: { planetName: "mars" } }}
+              >
+                Mars
+              </Link>
             </div>
 
             <div>
@@ -68,7 +83,12 @@ const MenuBar = () => {
           <div className={styles.menuBarTabUnit}>
             <div className={styles.planetTabUnit}>
               <div className={styles.planetTabColorJupiter}></div>
-              <p className={styles.planetTabName}>Jupiter</p>
+              <Link
+                className={styles.planetTabName}
+                href={{ query: { planetName: "jupiter" } }}
+              >
+                Jupiter
+              </Link>
             </div>
 
             <div>
@@ -86,8 +106,13 @@ const MenuBar = () => {
         <a>
           <div className={styles.menuBarTabUnit}>
             <div className={styles.planetTabUnit}>
-              <div className={styles.planetTabColorSaturne}></div>
-              <p className={styles.planetTabName}>Saturne</p>
+              <div className={styles.planetTabColorSaturn}></div>
+              <Link
+                className={styles.planetTabName}
+                href={{ query: { planetName: "saturn" } }}
+              >
+                Saturn
+              </Link>
             </div>
 
             <div>
@@ -106,7 +131,12 @@ const MenuBar = () => {
           <div className={styles.menuBarTabUnit}>
             <div className={styles.planetTabUnit}>
               <div className={styles.planetTabColorUranus}></div>
-              <p className={styles.planetTabName}>Uranus</p>
+              <Link
+                className={styles.planetTabName}
+                href={{ query: { planetName: "uranus" } }}
+              >
+                Uranus
+              </Link>
             </div>
 
             <div>
@@ -125,7 +155,12 @@ const MenuBar = () => {
           <div className={styles.menuBarTabUnit}>
             <div className={styles.planetTabUnit}>
               <div className={styles.planetTabColorNeptune}></div>
-              <p className={styles.planetTabName}>Neptune</p>
+              <Link
+                className={styles.planetTabName}
+                href={{ query: { planetName: "neptune" } }}
+              >
+                Neptune
+              </Link>
             </div>
 
             <div>
@@ -140,15 +175,6 @@ const MenuBar = () => {
             </div>
           </div>
         </a>
-
-        {/* <MenuBarTab className={styles.mercury}>Mercury</MenuBarTab>
-        <MenuBarTab className={styles.venus}>Venus</MenuBarTab>
-        <MenuBarTab className={styles.earth}>Earth</MenuBarTab>
-        <MenuBarTab className={styles.mars}>Mars</MenuBarTab>
-        <MenuBarTab className={styles.jupiter}>Jupiter</MenuBarTab>
-        <MenuBarTab className={styles.saturne}>Saturne</MenuBarTab>
-        <MenuBarTab className={styles.uranus}>Uranus</MenuBarTab>
-        <MenuBarTab className={styles.neptune}>Neptune</MenuBarTab> */}
       </div>
     </>
   );
