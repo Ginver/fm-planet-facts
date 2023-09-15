@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: space-evenly;
+    /* align-items: space-evenly; */
     flex-wrap: wrap;
     width: 665px;
   }
