@@ -47,7 +47,7 @@ const Planet = (props) => {
         ></PropertyInfoSection>
       </div>
 
-      <MenuBar></MenuBar>
+      {/* <MenuBar></MenuBar> */}
     </>
   );
 };
