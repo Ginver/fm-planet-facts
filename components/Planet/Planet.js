@@ -7,8 +7,7 @@ import AdditionalInfoBtns from "@/components/AdditionalInfoBtns/AdditionalInfoBt
 import SourceLink from "@/components/SourceLink/SourceLink";
 import styles from "./Planet.module.css";
 import InfoBtns1 from "../InfoBtns1/InfoBtns1";
-import MenuBar from "../MenuBar/MenuBar";
-import { useState } from "react";
+// import { useState } from "react";
 
 // const [image, setImage] = useState("");
 
@@ -46,8 +45,6 @@ const Planet = (props) => {
           temperature={props.temperature}
         ></PropertyInfoSection>
       </div>
-
-      {/* <MenuBar></MenuBar> */}
     </>
   );
 };

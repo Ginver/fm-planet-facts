@@ -2,97 +2,96 @@
   .menuBarUnit {
     display: flex;
     flex-direction: column;
-    margin: 44px 24px 0 24px;
+    margin-top: 44px;
   }
 
-  @media only screen and (min-width: 375px) {
-    .menuBarTabUnit {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0 20px 0;
-    }
+  .menuBarTabUnit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
 
-    .planetTabUnit {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-    }
+  .planetTabUnit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 
-    .planetTabColorMercury {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin-right: 24px;
-      background-color: var(--white);
-    }
+  .planetTabColorMercury {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 24px;
+    background-color: var(--white);
+  }
 
-    .planetTabColorVenus {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin-right: 24px;
-      background-color: var(--oker);
-    }
+  .planetTabColorVenus {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 24px;
+    background-color: var(--oker);
+  }
 
-    .planetTabColorEarth {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin-right: 24px;
-      background-color: var(--purple);
-    }
+  .planetTabColorEarth {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 24px;
+    background-color: var(--purple);
+  }
 
-    .planetTabColorMars {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin-right: 24px;
-      background-color: var(--terra);
-    }
+  .planetTabColorMars {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 24px;
+    background-color: var(--terra);
+  }
 
-    .planetTabColorJupiter {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin-right: 24px;
-      background-color: var(--red);
-    }
+  .planetTabColorJupiter {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 24px;
+    background-color: var(--red);
+  }
 
-    .planetTabColorSaturn {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin-right: 24px;
-      background-color: var(--orange);
-    }
+  .planetTabColorSaturn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 24px;
+    background-color: var(--orange);
+  }
 
-    .planetTabColorUranus {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin-right: 24px;
-      background-color: var(--green);
-    }
+  .planetTabColorUranus {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 24px;
+    background-color: var(--green);
+  }
 
-    .planetTabColorNeptune {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin-right: 24px;
-      background-color: var(--blue);
-    }
+  .planetTabColorNeptune {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 24px;
+    background-color: var(--blue);
+  }
 
-    .planetTabName {
-      font-family: var(--font-family-2);
-      font-size: 15px;
-      font-style: bold;
-      line-height: 25px;
-      letter-spacing: 1.36px;
-      text-transform: uppercase;
-      color: var(--white);
-    }
+  .planetTabName {
+    font-family: var(--font-family-2);
+    font-size: 15px;
+    font-style: bold;
+    line-height: 25px;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
   }
 }
 

@@ -11,8 +11,6 @@
 
   .tabUnitTitle {
     font-family: var(--font-family-1);
-    /* font-size: 28px; */
-    font-style: medium;
     letter-spacing: 1.05px;
     text-transform: uppercase;
     color: var(--white);
@@ -79,6 +77,7 @@
     text-transform: uppercase;
     color: var(--white);
     margin: 39px 0 27px 0;
+    text-decoration: none;
   }
 }
 
@@ -101,6 +100,7 @@
     font-style: medium;
     text-transform: uppercase;
     color: var(--white);
+    margin-top: 0;
   }
 
   .tabUnitHburger {
