@@ -7,25 +7,22 @@ import AdditionalInfoBtns from "@/components/AdditionalInfoBtns/AdditionalInfoBt
 import SourceLink from "@/components/SourceLink/SourceLink";
 import styles from "./Planet.module.css";
 import InfoBtns1 from "../InfoBtns1/InfoBtns1";
-// import { useState } from "react";
 
-// const [image, setImage] = useState("");
+const Planet = ({ handleclick, ...props }) => {
+  // console.log(props);
 
-const Planet = (props) => {
-  console.log(props);
   return (
     <>
       <div className={styles.planetCard}>
-        <InfoBtns1></InfoBtns1>
-
-        {/* <ImgPlanet image="/assets/planet-mercury.svg"></ImgPlanet> */}
+        <InfoBtns1 handleclick={handleclick}></InfoBtns1>
         <ImgPlanet image={`https:${props.img}`}></ImgPlanet>
 
         <div className={styles.planetCardContent}>
           <div>
             <NamePlanet name={props.name}></NamePlanet>
             <DescriptionPlanet
-              overview={props.overview}
+              contentDesc={props.contentDesc}
+              // overview={props.overview}
               // structure={props.structure}
               // geology={props.geology}
             ></DescriptionPlanet>
@@ -33,7 +30,7 @@ const Planet = (props) => {
           </div>
 
           <div>
-            <AdditionalInfoBtns></AdditionalInfoBtns>
+            <AdditionalInfoBtns handleclick={handleclick}></AdditionalInfoBtns>
           </div>
         </div>
       </div>

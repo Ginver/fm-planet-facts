@@ -1,10 +1,11 @@
 import Head from "next/head";
-// import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Planet from "@/components/Planet/Planet";
 import Tabs from "@/components/Tabs/Tabs";
 import contentfulClient from "@/contentful";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,6 +48,22 @@ export async function getStaticProps(context) {
 
 export default function Home(props) {
   console.log(props);
+
+  const [additionalInfo, setAdditionalInfo] = useState("Overview");
+  // console.log("WHAT IS ADDITIONAL INFO?", additionalInfo);
+
+  const router = useRouter();
+  // console.log("WHAT IS ROUTER?", router);
+
+  function handleclick(infoValue) {
+    setAdditionalInfo(infoValue);
+  }
+
+  useEffect(() => {
+    setAdditionalInfo("Overview");
+    // console.log("I'm rendering");
+  }, [router.query.planetName]);
+
   return (
     <>
       <Head>
@@ -67,11 +84,12 @@ export default function Home(props) {
         <Tabs></Tabs>
         <div className={styles.container}>
           <Planet
+            handleclick={handleclick}
             name={props.planet.fields.name}
-            img={props.planet.fields.imgOverview.fields.file.url}
+            img={props.planet.fields[`img${additionalInfo}`].fields.file.url}
             // img={props.planet.fields.imgStructure.fields.file.url}
             // img={props.planet.fields.imgGeology.fields.file.url}
-            overview={props.planet.fields.descriptionOverview}
+            contentDesc={props.planet.fields[`description${additionalInfo}`]}
             // structure={props.planet.fields.descriptionStructure}
             // geology={props.planet.fields.descriptionGeology}
             sourcelink={props.planet.fields.sourcelink}
