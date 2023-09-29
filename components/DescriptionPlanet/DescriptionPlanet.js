@@ -4,7 +4,7 @@ import styles from "./DescriptionPlanet.module.css";
 const DescriptionPlanet = (props) => {
   return (
     <>
-      <p className={styles.descriptionPlanet}>{props.overview}</p>
+      <p className={styles.descriptionPlanet}>{props.contentDesc}</p>
     </>
   );
 };
