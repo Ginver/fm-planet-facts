@@ -6,6 +6,7 @@ import Link from "next/link";
 
 const Tabs = (props) => {
   const [menuBarVisible, setMenuBarVisible] = useState(false);
+  const [tabBarVisible, setTabBarVisible] = useState(true);
 
   return (
     <>
@@ -16,7 +17,10 @@ const Tabs = (props) => {
 
         <button
           className={styles.tabUnitHburger}
-          onClick={() => setMenuBarVisible(!menuBarVisible)}
+          onClick={() =>
+            setMenuBarVisible(!menuBarVisible) &&
+            setTabBarVisible(!tabBarVisible)
+          }
         >
           <div className={styles.tabUnitHburgerLns}></div>
           <div className={styles.tabUnitHburgerLns}></div>
